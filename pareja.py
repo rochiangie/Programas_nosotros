@@ -70,6 +70,8 @@ def guardar_nota():
     else:
         messagebox.showwarning("Advertencia", "La nota no puede estar vacía.")
 
+#TE AMOOOO
+
 # Función para mostrar las notas guardadas
 def mostrar_notas():
     try:

@@ -40,12 +40,18 @@ class ConflictResolutionApp:
             
             self.problema_var = tk.StringVar(value=problemas)
             listbox = tk.Listbox(self.root, listvariable=self.problema_var, height=10, selectmode="single")
+            
+            # Agregar los problemas al listbox
+            for problema in problemas:
+                listbox.insert(tk.END, problema)
+                
             listbox.pack(pady=10)
 
             tk.Button(self.root, text="Continuar", command=lambda: self.obtener_problema_seleccionado(listbox)).pack(pady=20)
         else:
             messagebox.showinfo("Información", "No hay problemas predeterminados para este tipo de conflicto.")
             self.seleccionar_tipo_conflicto()
+
 
     def obtener_problema_seleccionado(self, listbox):
         try:
@@ -54,15 +60,15 @@ class ConflictResolutionApp:
         except tk.TclError:
             messagebox.showwarning("Advertencia", "Por favor, selecciona un problema de la lista.")
 
-        def nuevo_problema(self):
-            # Ingresar un nuevo problema
-            self.limpiar_ventana()
-            self.problema = simpledialog.askstring("Nuevo Problema", "Describe tu problema:")
-            
-            if self.problema:
-                self.elegir_metodo_resolucion()
-            else:
-                messagebox.showwarning("Advertencia", "No se describió ningún problema.")
+    def nuevo_problema(self):
+        # Ingresar un nuevo problema
+        self.limpiar_ventana()
+        self.problema = simpledialog.askstring("Nuevo Problema", "Describe tu problema:")
+        
+        if self.problema:
+            self.elegir_metodo_resolucion()
+        else:
+            messagebox.showwarning("Advertencia", "No se describió ningún problema.")
 
     def elegir_metodo_resolucion(self):
         # Ventana para seleccionar el método de resolución
@@ -127,11 +133,14 @@ class ConflictResolutionApp:
     def cargar_escenarios(self):
         # Cargar escenarios de un archivo JSON
         try:
-            with open('escenarios_conflictos.json', 'r') as f:
+            with open('escenarios.json', 'r') as f:
                 escenarios = json.load(f)
+            print("Escenarios cargados:", escenarios)  # Debugging
             return escenarios
         except FileNotFoundError:
+            print("Archivo no encontrado")  # Debugging
             return {"interpersonal": [], "pareja": []}
+
 
     def limpiar_ventana(self):
         # Limpiar la ventana actual

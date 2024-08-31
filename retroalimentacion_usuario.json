@@ -1,0 +1,29 @@
+{
+    "pareja": {
+        "directa": {
+            "exito": 0,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 01:51:28"
+            ]
+        }
+    },
+    "interpersonal": {
+        "negociaci\u00f3n": {
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 01:53:23"
+            ]
+        },
+        "no nos entendemos": {
+            "metodo": "mediaci\u00f3n",
+            "exito": 1,
+            "total": 2,
+            "fechas": [
+                "2024-08-31 01:56:32",
+                "2024-08-31 01:57:12"
+            ]
+        }
+    }
+}

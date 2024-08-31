@@ -8,19 +8,28 @@ class ConflictResolutionApp:
         self.root = root
         self.root.title("Herramienta de Resolución de Conflictos")
 
+        # Inicializar el StringVar para los radiobuttons
+        self.tipo_conflicto = tk.StringVar(value="")
+
         # Iniciar el flujo de la aplicación
         self.seleccionar_tipo_conflicto()
 
     def seleccionar_tipo_conflicto(self):
+        # Limpiar cualquier selección previa y asegurar que se reinicie el StringVar
+        self.tipo_conflicto.set("")  # Reiniciar el valor de tipo_conflicto
+
         # Ventana para seleccionar el tipo de conflicto
         self.limpiar_ventana()
+        self.root.update_idletasks()  # Forzar la actualización de la ventana después de limpiar
+
         tk.Label(self.root, text="Selecciona el tipo de conflicto:", font=("Arial", 16)).pack(pady=10)
 
-        self.tipo_conflicto = tk.StringVar()
+        # Creación de los Radiobuttons
         tk.Radiobutton(self.root, text="Interpersonal", variable=self.tipo_conflicto, value="interpersonal").pack(anchor="w")
         tk.Radiobutton(self.root, text="De pareja", variable=self.tipo_conflicto, value="pareja").pack(anchor="w")
 
         tk.Button(self.root, text="Continuar", command=self.seleccionar_problema).pack(pady=20)
+
 
     def seleccionar_problema(self):
         # Ventana para seleccionar o ingresar el problema
@@ -37,20 +46,29 @@ class ConflictResolutionApp:
 
         if problemas:
             tk.Label(self.root, text="Selecciona un problema:", font=("Arial", 16)).pack(pady=10)
-            
+
+            # Crear un Frame para que el Listbox y el Scrollbar estén juntos
+            frame_listbox = tk.Frame(self.root)
+            frame_listbox.pack(fill=tk.BOTH, expand=True)
+
             self.problema_var = tk.StringVar(value=problemas)
-            listbox = tk.Listbox(self.root, listvariable=self.problema_var, height=10, selectmode="single")
-            
-            # Agregar los problemas al listbox
-            for problema in problemas:
-                listbox.insert(tk.END, problema)
-                
-            listbox.pack(pady=10)
+            listbox = tk.Listbox(frame_listbox, listvariable=self.problema_var, height=10, selectmode="single")
+            listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+
+            # Añadir un scrollbar para manejar múltiples líneas
+            scrollbar = tk.Scrollbar(frame_listbox, orient="vertical", command=listbox.yview)
+            scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+            listbox.config(yscrollcommand=scrollbar.set)
 
             tk.Button(self.root, text="Continuar", command=lambda: self.obtener_problema_seleccionado(listbox)).pack(pady=20)
+
+            # Ajustar el tamaño de la ventana al contenido
+            self.root.update_idletasks()
+            self.root.geometry(f"{self.root.winfo_reqwidth()}x{self.root.winfo_reqheight()}")
         else:
             messagebox.showinfo("Información", "No hay problemas predeterminados para este tipo de conflicto.")
             self.seleccionar_tipo_conflicto()
+
 
 
     def obtener_problema_seleccionado(self, listbox):
@@ -133,13 +151,12 @@ class ConflictResolutionApp:
     def cargar_escenarios(self):
         # Cargar escenarios de un archivo JSON
         try:
-            with open('escenarios.json', 'r') as f:
+            with open('escenarios.json', 'r', encoding='utf-8') as f:
                 escenarios = json.load(f)
-            print("Escenarios cargados:", escenarios)  # Debugging
             return escenarios
         except FileNotFoundError:
-            print("Archivo no encontrado")  # Debugging
             return {"interpersonal": [], "pareja": []}
+
 
 
     def limpiar_ventana(self):

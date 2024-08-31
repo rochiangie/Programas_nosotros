@@ -14,6 +14,30 @@
             "fechas": [
                 "2024-08-31 02:08:47"
             ]
+        },
+        "Discrepancia sobre la frecuencia de reuniones familiares.": {
+            "metodo": "directa",
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 02:18:42"
+            ]
+        },
+        "Tensi\u00f3n debido a la falta de tiempo de calidad juntos.": {
+            "metodo": "fasd",
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 02:18:58"
+            ]
+        },
+        "Tensi\u00f3n sobre la toma de decisiones importantes en la relaci\u00f3n.": {
+            "metodo": "directa",
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 02:22:04"
+            ]
         }
     },
     "interpersonal": {

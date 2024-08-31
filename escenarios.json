@@ -1,0 +1,26 @@
+{
+    "interpersonal": [
+        "Tienes un conflicto con un colega por la falta de comunicación.",
+        "Hay un malentendido sobre quién debe liderar un proyecto en el trabajo.",
+        "Un amigo se ofendió por un comentario mal interpretado.",
+        "Un vecino se queja constantemente del ruido proveniente de tu casa.",
+        "Hay tensión con un compañero de trabajo por diferencias en la forma de abordar un problema.",
+        "Discusión con un colega sobre la asignación de responsabilidades.",
+        "Conflicto con un amigo sobre una promesa incumplida.",
+        "Un malentendido con un vecino sobre los límites de propiedad.",
+        "Desacuerdo con un compañero de equipo sobre la dirección de un proyecto.",
+        "Un malentendido con un compañero de trabajo debido a diferencias culturales."
+    ],
+    "pareja": [
+        "Discusión sobre la gestión de las finanzas del hogar.",
+        "Desacuerdo sobre la planificación de las vacaciones.",
+        "Conflicto por diferencias en la crianza de los hijos.",
+        "Tensión debido a la falta de tiempo de calidad juntos.",
+        "Desacuerdo sobre la distribución de las tareas del hogar.",
+        "Conflicto por diferencias en la planificación del futuro.",
+        "Una discusión sobre el manejo de conflictos anteriores.",
+        "Problemas de confianza debido a un malentendido.",
+        "Discrepancia sobre la frecuencia de reuniones familiares.",
+        "Tensión sobre la toma de decisiones importantes en la relación."
+    ]
+}

@@ -38,6 +38,85 @@
             "fechas": [
                 "2024-08-31 02:22:04"
             ]
+        },
+        "Una discusi\u00f3n sobre el manejo de conflictos anteriores.": {
+            "metodo": "",
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 14:02:00"
+            ]
+        },
+        "no nos entendemos": {
+            "metodo": "mediaci\u00f3n",
+            "exito": 2,
+            "total": 3,
+            "fechas": [
+                "2024-08-31 19:27:56",
+                "2024-08-31 19:28:50",
+                "2024-08-31 19:29:02"
+            ]
+        },
+        "Discusi\u00f3n sobre la gesti\u00f3n de las finanzas del hogar.": {
+            "metodo": "directa",
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 19:28:31"
+            ]
+        },
+        "otro": {
+            "metodo": "cosas",
+            "exito": 2,
+            "total": 2,
+            "fechas": [
+                "2024-08-31 19:33:07",
+                "2024-08-31 19:33:20"
+            ]
+        },
+        "pasan cosas": {
+            "metodos": {
+                "Negociaci\u00f3n": 1
+            },
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                "2024-08-31 19:37:19"
+            ]
+        },
+        "no puedo ir al ba\u00f1o cuando \u00e9l est\u00e1 cerca": {
+            "metodos": {
+                "Soluci\u00f3n directa": 1,
+                "laxante": 2,
+                "cosas": 2,
+                "otras cosas": 1
+            },
+            "exito": 2,
+            "total": 6,
+            "fechas": [
+                "2024-08-31 19:39:40",
+                "2024-08-31 19:40:11",
+                "2024-08-31 19:42:17",
+                "2024-08-31 19:43:14",
+                "2024-08-31 19:50:58",
+                {
+                    "fecha": "2024-08-31 19:54:32",
+                    "exito": false
+                }
+            ]
+        },
+        "no podemos jugar al FIFA juntos": {
+            "metodos": {
+                "Negociaci\u00f3n": 1
+            },
+            "exito": 1,
+            "total": 1,
+            "fechas": [
+                {
+                    "fecha": "2024-08-31 19:55:19",
+                    "exito": true
+                }
+            ]
         }
     },
     "interpersonal": {
@@ -55,6 +134,18 @@
             "fechas": [
                 "2024-08-31 01:56:32",
                 "2024-08-31 01:57:12"
+            ]
+        },
+        "Un malentendido con un compa\u00f1ero de trabajo debido a diferencias culturales.": {
+            "metodos": {
+                "otras cosas": 1,
+                "laxante": 1
+            },
+            "exito": 2,
+            "total": 2,
+            "fechas": [
+                "2024-08-31 19:37:04",
+                "2024-08-31 19:51:35"
             ]
         }
     }

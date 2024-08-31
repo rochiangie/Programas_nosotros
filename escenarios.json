@@ -1,26 +1,30 @@
 {
     "interpersonal": [
-        "Tienes un conflicto con un colega por la falta de comunicación.",
-        "Hay un malentendido sobre quién debe liderar un proyecto en el trabajo.",
-        "Un amigo se ofendió por un comentario mal interpretado.",
+        "Tienes un conflicto con un colega por la falta de comunicaci\u00f3n.",
+        "Hay un malentendido sobre qui\u00e9n debe liderar un proyecto en el trabajo.",
+        "Un amigo se ofendi\u00f3 por un comentario mal interpretado.",
         "Un vecino se queja constantemente del ruido proveniente de tu casa.",
-        "Hay tensión con un compañero de trabajo por diferencias en la forma de abordar un problema.",
-        "Discusión con un colega sobre la asignación de responsabilidades.",
+        "Hay tensi\u00f3n con un compa\u00f1ero de trabajo por diferencias en la forma de abordar un problema.",
+        "Discusi\u00f3n con un colega sobre la asignaci\u00f3n de responsabilidades.",
         "Conflicto con un amigo sobre una promesa incumplida.",
-        "Un malentendido con un vecino sobre los límites de propiedad.",
-        "Desacuerdo con un compañero de equipo sobre la dirección de un proyecto.",
-        "Un malentendido con un compañero de trabajo debido a diferencias culturales."
+        "Un malentendido con un vecino sobre los l\u00edmites de propiedad.",
+        "Desacuerdo con un compa\u00f1ero de equipo sobre la direcci\u00f3n de un proyecto.",
+        "Un malentendido con un compa\u00f1ero de trabajo debido a diferencias culturales."
     ],
     "pareja": [
-        "Discusión sobre la gestión de las finanzas del hogar.",
-        "Desacuerdo sobre la planificación de las vacaciones.",
+        "Discusi\u00f3n sobre la gesti\u00f3n de las finanzas del hogar.",
+        "Desacuerdo sobre la planificaci\u00f3n de las vacaciones.",
         "Conflicto por diferencias en la crianza de los hijos.",
-        "Tensión debido a la falta de tiempo de calidad juntos.",
-        "Desacuerdo sobre la distribución de las tareas del hogar.",
-        "Conflicto por diferencias en la planificación del futuro.",
-        "Una discusión sobre el manejo de conflictos anteriores.",
+        "Tensi\u00f3n debido a la falta de tiempo de calidad juntos.",
+        "Desacuerdo sobre la distribuci\u00f3n de las tareas del hogar.",
+        "Conflicto por diferencias en la planificaci\u00f3n del futuro.",
+        "Una discusi\u00f3n sobre el manejo de conflictos anteriores.",
         "Problemas de confianza debido a un malentendido.",
         "Discrepancia sobre la frecuencia de reuniones familiares.",
-        "Tensión sobre la toma de decisiones importantes en la relación."
+        "Tensi\u00f3n sobre la toma de decisiones importantes en la relaci\u00f3n.",
+        "otro",
+        "pasan cosas",
+        "no puedo ir al ba\u00f1o cuando \u00e9l est\u00e1 cerca",
+        "no podemos jugar al FIFA juntos"
     ]
 }
